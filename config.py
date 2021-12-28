@@ -1,8 +1,13 @@
 import json
 import colorama
 import datetime
-import msvcrt
+import os
 import time
+
+if os.name == "posix":
+    from getch import getch as py_getch
+else:
+    from msvcrt import getch as py_getch
 
 # Foreground Colours
 fgBLACK = colorama.Fore.BLACK
@@ -66,11 +71,11 @@ def inpt(prompt: str = ""):
 def getch(output: str):
     print(output, end="")
     try:
-        key = msvcrt.getch().decode("utf-8")
+        key = py_getch().decode("utf-8")
     except UnicodeDecodeError:
         key = "\x00"  # Just a guess, need a better way for this
     if key == "\x00":
-        key = msvcrt.getch().decode("utf-8")
+        key = py_getch().decode("utf-8")
     return key
 
 
