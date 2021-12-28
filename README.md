@@ -19,8 +19,8 @@ python messenger.py
 ### Features
 
 - Read and Write encrypted or non-encrypted messages.
-- Add favourite users and set a custom name for them.
-- See user's names.
+- Add favourite addresses and set a custom name for them.
+- See addresses names.
 - Adjust configuration through Settings.
 
 #### Donate Signa
