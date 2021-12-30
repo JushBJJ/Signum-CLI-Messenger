@@ -1,2 +1,4 @@
 colorama==0.4.4
 requests==2.25.1
+getch==1.0; sys_platform == 'linux'
+getch==1.0; sys_platform == 'darwin'
