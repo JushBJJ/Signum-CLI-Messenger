@@ -8,7 +8,8 @@ A CLI messenger for the Signum community. Built for people who like using termin
 ### Setup
 ``` 
 git clone https://github.com/JushBJJ/signum-cli-messenger
-pip install -r requirments.txt
+cd signum-cli-messenger
+pip install -r requirements.txt
 ```
 
 ### Run
